@@ -54,17 +54,21 @@ h1 {
     font-family: 'Merriweather', serif;
     text-align: center;
     font-size: 20px;
+    color: var(--purple-text);
 
 }
 
-a:link {
-    color: white;
-    text-decoration: none;
-}
+/*a:link {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
 
-.contact {
+.hello-contact {
+    color: var(--main-text);
     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
 }
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .button {
@@ -94,9 +98,7 @@ a:link {
 
 .inner-container {
     border: solid 5px pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   flex-direction: column;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 1200px;
@@ -113,7 +115,7 @@ a:link {
 header {
     background: rgb(2, 0, 36);
     background: linear-gradient(152deg, rgba(2, 0, 36, 1) 0%, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
-    position: relative;
+    /*position: relative;*/
 }
 
 
@@ -134,7 +136,9 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-basis: 1200px;
     margin: 100px 0px 100px 0px;
+    padding: 20px;
 }
 
 h1, h3, button {
@@ -153,34 +157,38 @@ h1, h3, button {
 /* --------------- 4.2 Introduction ------------------- */
 
 /*HELLO*/
+
 .hello {
-    border: solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /*margin: 100px 0px 100px 0px;*/
-    color: var(--purple-text);
+    margin: 100px 200px 100px 200px;
+    padding: 20px;
+    border: solid black 4px;
+    flex-shrink:1;
+    flex-grow: 0;
+}
+ article p {
+    padding: 5px;
+    margin: 20px;
 }
 
 .hello-contact {
-
-
-
-
+    margin:20px;
 }
-article p {
-    padding: 5px;
-}
+
 /*ROLLING STONE*/
 .rollingstone {
-    background-color: var(--project-background);
     display: flex;
-    flex-direction: row;
-    border: solid 2px purple;
-    margin: 100px 0px 100px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 200px 100px 200px;
+    padding: 20px;
+    border: solid black 4px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
-
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
