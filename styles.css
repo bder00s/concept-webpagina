@@ -66,7 +66,15 @@ h1 {
     color: var(--main-text);
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
 
+.text-rollingstone {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+h2 {
+    font-family: 'Merriweather', serif;
 }
 
 
@@ -137,7 +145,7 @@ li {
     align-items: center;
     justify-content: center;
     flex-basis: 1200px;
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0 100px 0;
     padding: 20px;
 }
 
@@ -169,7 +177,7 @@ h1, h3, button {
     flex-shrink:1;
     flex-grow: 0;
 }
- article p {
+ .hello p {
     padding: 5px;
     margin: 20px;
 }
@@ -180,15 +188,50 @@ h1, h3, button {
 
 /*ROLLING STONE*/
 .rollingstone {
+    background-color: var(--project-background);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 200px 100px 200px;
-    padding: 20px;
-    border: solid black 4px;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid purple 4px;
     flex-shrink: 1;
     flex-grow: 0;
+}
+.squiggle-line {
+    margin: 20px 0 20px 0;
+    width: 50px;
+}
+
+.text-rollingstone {
+    margin-left: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: solid blue 2px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 280px;
+    justify-content: center;
+
+
+}
+
+.text-rollingstone p {
+    text-align: left;
+    margin: 20px 0 20px 0;
+
+}
+
+.image-rollingstone {
+border: solid orange 6px;
+margin: 0 0 0 40px;
+
+
+}
+
+.image-rollingstone img {
+    width: 760px;
+
+
+
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
