@@ -29,7 +29,8 @@
     --main-text: #0C0C0C;
     --project-background: #F3F6F9;
     --buttons: #ED4385;
-    --service-text: #7A7A7A
+    --service-text: #7A7A7A;
+    --lightpurple: #F2F0FF;
 
 
 }
@@ -75,6 +76,23 @@ h1 {
 }
 h2 {
     font-family: 'Merriweather', serif;
+}
+
+.rollingstone, .text-variety, .worth p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+a:link {
+        color: mediumpurple;
+        text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+a: visited {
+    color: mediumpurple;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -123,7 +141,7 @@ h2 {
 header {
     background: rgb(2, 0, 36);
     background: linear-gradient(152deg, rgba(2, 0, 36, 1) 0%, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
-    /*position: relative;*/
+    position: relative;
 }
 
 
@@ -153,13 +171,13 @@ h1, h3, button {
     margin: 20px;
 }
 
-.squiggle-stripe {
-    position: absolute;
-    left: 550px;
-    top: 480px;
+/*.squiggle-stripe {*/
+/*    position: absolute;*/
+/*    left: 550px;*/
+/*    top: 480px;*/
 
 
-}
+
 
 
 /* --------------- 4.2 Introduction ------------------- */
@@ -220,18 +238,54 @@ h1, h3, button {
 
 }
 
-.image-rollingstone {
-border: solid orange 6px;
-margin: 0 0 0 40px;
+/*.image-rollingstone {*/
+/*border: solid orange 6px;*/
+/*margin: 0 0 0 40px;*/
 
 
-}
+
 
 .image-rollingstone img {
     width: 760px;
-
-
-
 }
 
+    /*VARIETY*/
+    .variety {
+        background-color: var(--project-background);
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+        padding: 20px;
+        border: solid blue 4px;
+        flex-shrink:1;
+        flex-grow: 0;
+    }
+
+    .image-wrapper {
+        flex-basis: 800px;
+        flex-grow:0;
+        flex-shrink:1;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+.text-variety {
+    border: solid mediumpurple 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-basis: 280px;
+    margin-left: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 20px;
+}
+
+.text-variety p {
+    text-align: left;
+    margin: 20px 0 20px 0;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
