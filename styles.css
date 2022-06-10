@@ -74,17 +74,30 @@ h1 {
     font-size: 15px;
 
 }
+
 h2 {
     font-family: 'Merriweather', serif;
 }
 
-.rollingstone, .text-variety, .worth p {
+.text-rollingstone, .text-variety, .text-worth p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
+
+.products h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--purple-text);
+
+}
+
+.products p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
 a:link {
-        color: mediumpurple;
-        text-decoration: none;
+    color: mediumpurple;
+    text-decoration: none;
     text-transform: uppercase;
 
 }
@@ -124,12 +137,11 @@ a: visited {
 
 .inner-container {
     border: solid 5px pink;
-   flex-direction: column;
+    flex-direction: column;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 1200px;
     margin: 0 20px;
-
 
 }
 
@@ -168,16 +180,13 @@ li {
 }
 
 h1, h3, button {
-    margin: 20px;
+    margin: 20px 0 20px 0;
 }
 
 /*.squiggle-stripe {*/
 /*    position: absolute;*/
 /*    left: 550px;*/
 /*    top: 480px;*/
-
-
-
 
 
 /* --------------- 4.2 Introduction ------------------- */
@@ -192,16 +201,17 @@ h1, h3, button {
     margin: 100px 200px 100px 200px;
     padding: 20px;
     border: solid black 4px;
-    flex-shrink:1;
+    flex-shrink: 1;
     flex-grow: 0;
 }
- .hello p {
+
+.hello p {
     padding: 5px;
     margin: 20px;
 }
 
 .hello-contact {
-    margin:20px;
+    margin: 20px;
 }
 
 /*ROLLING STONE*/
@@ -214,6 +224,7 @@ h1, h3, button {
     flex-shrink: 1;
     flex-grow: 0;
 }
+
 .squiggle-line {
     margin: 20px 0 20px 0;
     width: 50px;
@@ -238,45 +249,40 @@ h1, h3, button {
 
 }
 
-/*.image-rollingstone {*/
-/*border: solid orange 6px;*/
-/*margin: 0 0 0 40px;*/
-
-
 
 
 .image-rollingstone img {
     width: 760px;
 }
 
-    /*VARIETY*/
-    .variety {
-        background-color: var(--project-background);
-        display: flex;
-        flex-direction: row;
-       justify-content: space-between;
-        padding: 20px;
-        border: solid blue 4px;
-        flex-shrink:1;
-        flex-grow: 0;
-    }
+/*VARIETY*/
+.variety {
+    background-color: var(--project-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border: solid blue 4px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
 
-    .image-wrapper {
-        flex-basis: 800px;
-        flex-grow:0;
-        flex-shrink:1;
-    }
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 
-    img {
-        width: 100%;
+img {
+    width: 100%;
 
-    }
+}
 
 .text-variety {
     border: solid mediumpurple 4px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     flex-basis: 280px;
     margin-left: 20px;
     margin-top: 150px;
@@ -284,8 +290,120 @@ h1, h3, button {
     margin-right: 20px;
 }
 
+
 .text-variety p {
     text-align: left;
     margin: 20px 0 20px 0;
 }
+
+/*WORTH*/
+
+.worth {
+    background-color: var(--project-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border: solid blue 4px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.text-worth {
+    border: solid mediumpurple 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 280px;
+    margin-left: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 20px;
+
+}
+
+.text-worth p {
+    text-align: left;
+    margin: 10px 0 10px 0;
+}
+
+
+/*PRODUCTS*/
+
+.products {
+    border: solid 2px crimson;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.webdesign {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 40px 30px 40px 30px;
+    padding: 20px;
+
+}
+
+
+.webdevelopment {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+
+}
+
+.ux {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+
+}
+.logobranding {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+
+}
+
+.seo {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+
+}
+
+.copywriting {
+    display: flex;
+    flex-direction: column;
+    border: blue 2px solid;
+    flex-basis: 250px;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+}
+
+.webdesign img, .webdevelopment img, .ux img, .logobranding img, .seo img, .copywriting img {
+    width: 50px;
+}
+
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
