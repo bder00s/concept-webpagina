@@ -59,9 +59,10 @@ h1 {
 
 }
 
-/*a:link {*/
-/*    color: white;*/
-/*    text-decoration: none;*/
+.products h3 {
+    font-size: 16px;
+}
+
 
 .hello-contact {
     color: var(--main-text);
@@ -93,19 +94,36 @@ h2 {
 .products p {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-}
+    color: var(--service-text);
 
-a:link {
-    color: mediumpurple;
-    text-decoration: none;
-    text-transform: uppercase;
 
 }
 
-a: visited {
+.contacttext {
+    color: white;
+}
+.contacttext p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+a:-webkit-any-link {
+    font-family: 'Roboto', sans-serif;
     color: mediumpurple;
+    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.navbar-container a:-webkit-any-link {
+    color: white;
+    text-transform: none;
 }
 
 
@@ -120,10 +138,29 @@ a: visited {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
-    border-color: rgba(0, 0, 0, 0.0)
+    border-color: rgba(0, 0, 0, 0.0);
 }
 
+.submitbutton {
+    background-color: var(--buttons);
+    color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    border-color: rgba(0, 0, 0, 0.0);
 
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 5px;
+    font-weight: bold;
+    font-size: 10px;
+}
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
     border: solid black 5px;
@@ -148,12 +185,19 @@ a: visited {
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
+.footer {
+    background-color: var(--main-text);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
 /* --------------- 4.1 Header ------------------------- */
 header {
     background: rgb(2, 0, 36);
     background: linear-gradient(152deg, rgba(2, 0, 36, 1) 0%, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
-    position: relative;
+
 }
 
 
@@ -183,12 +227,13 @@ h1, h3, button {
     margin: 20px 0 20px 0;
 }
 
-/*.squiggle-stripe {*/
-/*    position: absolute;*/
-/*    left: 550px;*/
-/*    top: 480px;*/
+.squiggle-stripe {
+    width: 20px;
+    margin-left: 500px;
 
 
+
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /*HELLO*/
@@ -248,7 +293,6 @@ h1, h3, button {
     margin: 20px 0 20px 0;
 
 }
-
 
 
 .image-rollingstone img {
@@ -339,7 +383,6 @@ img {
     flex-wrap: wrap;
 
 
-
 }
 
 .webdesign {
@@ -347,8 +390,9 @@ img {
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 40px 30px 40px 30px;
+    margin: 40px 30px 10px 30px;
     padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 
 }
 
@@ -358,9 +402,9 @@ img {
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 50px 30px 50px 30px;
+    margin: 40px 30px 10px 30px;
     padding: 20px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 }
 
 .ux {
@@ -368,18 +412,19 @@ img {
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 50px 30px 50px 30px;
+    margin: 40px 30px 10px 30px;
     padding: 20px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 }
+
 .logobranding {
     display: flex;
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 50px 30px 50px 30px;
+    margin: 20px 30px 50px 30px;
     padding: 20px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 }
 
 .seo {
@@ -387,9 +432,9 @@ img {
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 50px 30px 50px 30px;
+    margin: 20px 30px 50px 30px;
     padding: 20px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 }
 
 .copywriting {
@@ -397,12 +442,50 @@ img {
     flex-direction: column;
     border: blue 2px solid;
     flex-basis: 250px;
-    margin: 50px 30px 50px 30px;
+    margin: 20px 30px 50px 30px;
     padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
 }
 
 .webdesign img, .webdevelopment img, .ux img, .logobranding img, .seo img, .copywriting img {
     width: 50px;
+}
+
+/*CONTACTFORM*/
+.contactform {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(152deg, rgba(2, 0, 36, 1) 0%, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    border: yellow 4px solid;
+
+
+}
+
+.contacttext {
+   text-align: center;
+    margin: 40px 100px 20px 100px;
+    border: pink solid 2px;
+
+}
+
+.contacttext > h2 {
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: white solid 2px;
+    justify-content: center;
+    flex-basis: 100px;
+   margin: 0 350px 0 350px;
+}
+input, textarea {
+    margin: 15px 0 15px 0;
+}
+.submitbutton {
+    margin: 0 150px 40px 150px;
+
 }
 
 
