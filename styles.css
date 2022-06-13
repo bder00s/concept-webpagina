@@ -121,11 +121,35 @@ a:-webkit-any-link {
     text-transform: uppercase;
 }
 
-.navbar-container a:-webkit-any-link {
+
+
+header a:visited {
     color: white;
     text-transform: none;
+    font-family: 'Roboto', sans-serif;
 }
 
+header a:link {
+    color: white;
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#capital {
+    text-transform: uppercase;
+}
+
+main a:link {
+    color: var(--purple-text);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+main a:visited {
+    color: var(--purple-text);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 .button {
@@ -161,6 +185,17 @@ a:-webkit-any-link {
     font-weight: bold;
     font-size: 10px;
 }
+
+.image-wrapper {
+    flex-basis: 800px;
+    box-shadow: 0 25px 22px 0px rgba(0,0,0,0.21);
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+img {
+    width: 100%;
+}
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
     border: solid black 5px;
@@ -190,7 +225,7 @@ a:-webkit-any-link {
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* --------------- 4.1 Header ------------------------- */
@@ -219,7 +254,7 @@ li {
     align-items: center;
     justify-content: center;
     flex-basis: 1200px;
-    margin: 100px 0 100px 0;
+    margin: 70px 0 0 0;
     padding: 20px;
 }
 
@@ -228,12 +263,12 @@ h1, h3, button {
 }
 
 .squiggle-stripe {
-    width: 20px;
-    margin-left: 500px;
-
+    width: 70px;
+    margin: 30px 0 0 0;
 
 
 }
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /*HELLO*/
@@ -265,7 +300,7 @@ h1, h3, button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid purple 4px;
+    /*border: solid purple 4px;*/
     flex-shrink: 1;
     flex-grow: 0;
 }
@@ -276,13 +311,11 @@ h1, h3, button {
 }
 
 .text-rollingstone {
-    margin-left: 20px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    border: solid blue 2px;
+    margin: 150px 130px 150px 30px;
+    /*border: solid blue 2px;*/
     display: flex;
     flex-direction: column;
-    flex-basis: 280px;
+    flex-basis: 300px;
     justify-content: center;
 
 
@@ -295,9 +328,6 @@ h1, h3, button {
 }
 
 
-.image-rollingstone img {
-    width: 760px;
-}
 
 /*VARIETY*/
 .variety {
@@ -305,33 +335,19 @@ h1, h3, button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
-    border: solid blue 4px;
+    /*border: solid purple 4px;*/
     flex-shrink: 1;
     flex-grow: 0;
-}
-
-.image-wrapper {
-    flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-
-img {
-    width: 100%;
-
 }
 
 .text-variety {
-    border: solid mediumpurple 4px;
+    /*border: solid mediumpurple 4px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 280px;
-    margin-left: 20px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-right: 20px;
+    flex-basis: 300px;
+    margin: 150px 30px 150px 130px;
+
 }
 
 
@@ -347,22 +363,19 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
-    border: solid blue 4px;
+    /*border: solid blue 4px;*/
     flex-shrink: 1;
     flex-grow: 0;
 }
 
 .text-worth {
-    border: solid mediumpurple 4px;
+    /*border: solid mediumpurple 4px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 280px;
-    margin-left: 20px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-right: 20px;
+    flex-basis: 300px;
+    margin: 150px 130px 150px 30px;
+
 
 }
 
@@ -375,80 +388,32 @@ img {
 /*PRODUCTS*/
 
 .products {
-    border: solid 2px crimson;
+    /*border: solid 2px crimson;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+   margin: 20px;
 
 
 }
 
-.webdesign {
+.box {
     display: flex;
     flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 40px 30px 10px 30px;
+    border: solid 1.5px var(--purple-text);
+    flex-basis: 280px;
+    margin: 10px 30px 10px 30px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
+    width: 250px;
+    height: 250px;
 
 }
 
-
-.webdevelopment {
-    display: flex;
-    flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 40px 30px 10px 30px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
-}
-
-.ux {
-    display: flex;
-    flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 40px 30px 10px 30px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
-}
-
-.logobranding {
-    display: flex;
-    flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 20px 30px 50px 30px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
-}
-
-.seo {
-    display: flex;
-    flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 20px 30px 50px 30px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
-}
-
-.copywriting {
-    display: flex;
-    flex-direction: column;
-    border: blue 2px solid;
-    flex-basis: 250px;
-    margin: 20px 30px 50px 30px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
-}
-
-.webdesign img, .webdevelopment img, .ux img, .logobranding img, .seo img, .copywriting img {
-    width: 50px;
+.box img {
+width: 50px;
 }
 
 /*CONTACTFORM*/
@@ -456,7 +421,7 @@ img {
     display: flex;
     flex-direction: column;
     background: linear-gradient(152deg, rgba(2, 0, 36, 1) 0%, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
-    border: yellow 4px solid;
+    /*border: yellow 4px solid;*/
 
 
 }
@@ -464,7 +429,7 @@ img {
 .contacttext {
    text-align: center;
     margin: 40px 100px 20px 100px;
-    border: pink solid 2px;
+    /*border: pink solid 2px;*/
 
 }
 
@@ -475,7 +440,7 @@ img {
 .form {
     display: flex;
     flex-direction: column;
-    border: white solid 2px;
+    /*border: white solid 2px;*/
     justify-content: center;
     flex-basis: 100px;
    margin: 0 350px 0 350px;
