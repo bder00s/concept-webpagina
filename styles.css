@@ -70,11 +70,6 @@ h1 {
     font-size: 15px;
 }
 
-.text-rollingstone {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-
-}
 
 h2 {
     font-family: 'Merriweather', serif;
@@ -102,6 +97,7 @@ h2 {
 .contacttext {
     color: white;
 }
+
 .contacttext p {
     font-family: 'Roboto', sans-serif;
 }
@@ -120,7 +116,6 @@ a:-webkit-any-link {
     text-decoration: none;
     text-transform: uppercase;
 }
-
 
 
 header a:visited {
@@ -188,27 +183,29 @@ main a:visited {
 
 .image-wrapper {
     flex-basis: 800px;
-    box-shadow: 0 25px 22px 0px rgba(0,0,0,0.21);
+    box-shadow: 0 25px 22px 0px rgba(0, 0, 0, 0.21);
     flex-grow: 0;
     flex-shrink: 1;
 }
 
 img {
     width: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
+
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
-    border: solid black 5px;
+    border: solid 1px rgba(0, 0, 0, 0.14);
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
 
-
 }
 
 .inner-container {
-    border: solid 5px pink;
+    border: solid 1px rgba(0, 0, 0, 0.14);
     flex-direction: column;
     flex-grow: 0;
     flex-shrink: 1;
@@ -265,6 +262,8 @@ h1, h3, button {
 .squiggle-stripe {
     width: 70px;
     margin: 30px 0 0 0;
+    position: relative;
+    top: 60px;
 
 
 }
@@ -278,24 +277,27 @@ h1, h3, button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 200px 100px 200px;
+    margin: 100px 0 100px 300px;
     padding: 20px;
-    border: solid black 4px;
+    /*border: solid black 4px;*/
     flex-shrink: 1;
     flex-grow: 0;
+    width: 650px;
 }
 
 .hello p {
     padding: 5px;
-    margin: 20px;
+    margin: 10px;
+
 }
 
 .hello-contact {
     margin: 20px;
 }
 
-/*ROLLING STONE*/
-.rollingstone {
+/*PHOTO PAGES*/
+
+.photopage {
     background-color: var(--project-background);
     display: flex;
     flex-direction: row;
@@ -303,7 +305,11 @@ h1, h3, button {
     /*border: solid purple 4px;*/
     flex-shrink: 1;
     flex-grow: 0;
+
 }
+
+/*ROLLING STONE*/
+
 
 .squiggle-line {
     margin: 20px 0 20px 0;
@@ -328,17 +334,8 @@ h1, h3, button {
 }
 
 
-
 /*VARIETY*/
-.variety {
-    background-color: var(--project-background);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*border: solid purple 4px;*/
-    flex-shrink: 1;
-    flex-grow: 0;
-}
+
 
 .text-variety {
     /*border: solid mediumpurple 4px;*/
@@ -357,16 +354,6 @@ h1, h3, button {
 }
 
 /*WORTH*/
-
-.worth {
-    background-color: var(--project-background);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*border: solid blue 4px;*/
-    flex-shrink: 1;
-    flex-grow: 0;
-}
 
 .text-worth {
     /*border: solid mediumpurple 4px;*/
@@ -394,7 +381,7 @@ h1, h3, button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   margin: 20px;
+    margin: 20px;
 
 
 }
@@ -404,7 +391,7 @@ h1, h3, button {
     flex-direction: column;
     border: solid 1.5px var(--purple-text);
     flex-basis: 280px;
-    margin: 10px 30px 10px 30px;
+    margin: 20px 30px 20px 30px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
     width: 250px;
@@ -413,10 +400,11 @@ h1, h3, button {
 }
 
 .box img {
-width: 50px;
+    width: 50px;
 }
 
 /*CONTACTFORM*/
+
 .contactform {
     display: flex;
     flex-direction: column;
@@ -427,7 +415,7 @@ width: 50px;
 }
 
 .contacttext {
-   text-align: center;
+    text-align: center;
     margin: 40px 100px 20px 100px;
     /*border: pink solid 2px;*/
 
@@ -443,11 +431,13 @@ width: 50px;
     /*border: white solid 2px;*/
     justify-content: center;
     flex-basis: 100px;
-   margin: 0 350px 0 350px;
+    margin: 0 350px 0 350px;
 }
+
 input, textarea {
     margin: 15px 0 15px 0;
 }
+
 .submitbutton {
     margin: 0 150px 40px 150px;
 
@@ -455,3 +445,25 @@ input, textarea {
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-size: 12px;
+    }
+}
+
+    /*main {*/
+    /*    width: 50%;*/
+    /*    font-size: 12px;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+
